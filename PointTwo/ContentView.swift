@@ -17,48 +17,63 @@ struct ContentView: View {
     var body: some View {
         VStack() {
             Group {
-                Spacer()
                 Text("Current Location")
-                Text("Lat: \(LVM.userLocation.coordinate.latitude)")
-                Text("Long: \(LVM.userLocation.coordinate.longitude)")
-                Text("Alt: \(LVM.userLocation.altitude)")
-                Spacer()
-            }
+                    .font(.title)
+                    .padding()
+                
+                HStack {
+                    Spacer()
+                    VStack {
+                        Text("Lat:").frame(maxWidth: 40, alignment: .leading)
+                        Text("Lon:").frame(maxWidth: 40, alignment: .leading)
+                        Text("Alt:").frame(maxWidth: 40, alignment: .leading)
+                    }
+                    VStack {
+                        Text("\(LVM.userLocation.coordinate.latitude)").frame(maxWidth: 120, alignment: .trailing)
+                        Text("\(LVM.userLocation.coordinate.longitude)").frame(maxWidth: 120, alignment: .trailing)
+                        Text("\(LVM.userLocation.altitude)").frame(maxWidth: 120, alignment: .trailing)
+                    }
+                    Spacer()
+                }.padding()
+            }.padding()
 
             Divider()
 
             HStack {
                 VStack {
                     Text("Point 1")
+                        .font(.title2)
+                        .padding()
                     Text("Lat: \(point1.coordinate.latitude)")
-                    Text("Long: \(point1.coordinate.longitude)")
+                    Text("Lon: \(point1.coordinate.longitude)")
                     Text("Alt: \(point1.altitude)")
                     Button("Store Point 1") {
                         point1 = LVM.userLocation
+                        distance = point2.distance(from: point1)
                     }
-                }
-
+                    .padding()
+                }.padding()
+                Spacer()
                 VStack {
                     Text("Point 2")
+                        .font(.title2)
+                        .padding()
                     Text("Lat: \(point2.coordinate.latitude)")
-                    Text("Long: \(point2.coordinate.longitude)")
+                    Text("Lon: \(point2.coordinate.longitude)")
                     Text("Alt: \(point2.altitude)")
                     Button("Store Point 2") {
                         point2 = LVM.userLocation
+                        distance = point1.distance(from: point2)
                     }
-                }
-            }
+                    .padding()
+                }.padding()
+            }.padding()
 
             Divider()
 
             Group {
-                Spacer()
-                Text("\(distance) meters from point 1 to point 2")
-                Button("Calculate Distance") {
-                    distance = point1.distance(from: point2)
-                }
-                Spacer()
-            }
+                Text("\(distance) meters from Point 1 to Point 2")
+            }.padding()
         }
     }
 }
