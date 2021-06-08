@@ -11,6 +11,7 @@
 		FFE7E13D266E9CCE00921139 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7E13C266E9CCE00921139 /* ContentView.swift */; };
 		FFE7E13F266E9CD100921139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE7E13E266E9CD100921139 /* Assets.xcassets */; };
 		FFE7E142266E9CD100921139 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE7E141266E9CD100921139 /* Preview Assets.xcassets */; };
+		FFE7E14A266EE74B00921139 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7E149266EE74B00921139 /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FFE7E13E266E9CD100921139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE7E141266E9CD100921139 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFE7E143266E9CD100921139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE7E149266EE74B00921139 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				FFE7E13A266E9CCE00921139 /* PointTwoApp.swift */,
 				FFE7E13C266E9CCE00921139 /* ContentView.swift */,
+				FFE7E149266EE74B00921139 /* LocationViewModel.swift */,
 				FFE7E13E266E9CD100921139 /* Assets.xcassets */,
 				FFE7E143266E9CD100921139 /* Info.plist */,
 				FFE7E140266E9CD100921139 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE7E13D266E9CCE00921139 /* ContentView.swift in Sources */,
+				FFE7E14A266EE74B00921139 /* LocationViewModel.swift in Sources */,
 				FFE7E13B266E9CCE00921139 /* PointTwoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JDR.PointTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JDR.PointTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
