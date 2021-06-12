@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF0AD3AC2670101A00BAA089 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF0AD3AA2670101A00BAA089 /* Model.xcdatamodeld */; };
 		FF0AD3AE267016E100BAA089 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0AD3AD267016E100BAA089 /* LocationView.swift */; };
 		FF0AD3C026716B2B00BAA089 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF0AD3B226716B2900BAA089 /* Icon.png */; };
 		FFE7E13B266E9CCE00921139 /* PointTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7E13A266E9CCE00921139 /* PointTwoApp.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF0AD3AB2670101A00BAA089 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FF0AD3AD267016E100BAA089 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		FF0AD3B226716B2900BAA089 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		FFE7E137266E9CCE00921139 /* PointTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +61,6 @@
 				FFE7E13A266E9CCE00921139 /* PointTwoApp.swift */,
 				FFE7E13C266E9CCE00921139 /* ContentView.swift */,
 				FF0AD3AD267016E100BAA089 /* LocationView.swift */,
-				FF0AD3AA2670101A00BAA089 /* Model.xcdatamodeld */,
 				FFE7E149266EE74B00921139 /* LocationViewModel.swift */,
 				FFE7E13E266E9CD100921139 /* Assets.xcassets */,
 				FFE7E143266E9CD100921139 /* Info.plist */,
@@ -155,7 +152,6 @@
 				FFE7E14A266EE74B00921139 /* LocationViewModel.swift in Sources */,
 				FF0AD3AE267016E100BAA089 /* LocationView.swift in Sources */,
 				FFE7E13B266E9CCE00921139 /* PointTwoApp.swift in Sources */,
-				FF0AD3AC2670101A00BAA089 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,19 +340,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FF0AD3AA2670101A00BAA089 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FF0AD3AB2670101A00BAA089 /* Model.xcdatamodel */,
-			);
-			currentVersion = FF0AD3AB2670101A00BAA089 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FFE7E12F266E9CCE00921139 /* Project object */;
 }
